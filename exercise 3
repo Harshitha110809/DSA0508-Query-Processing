@@ -1,0 +1,65 @@
+Skip to content
+Navigation Menu
+Sign in
+Aishwarya011204
+/
+DSA0508-QUERY-PROCESSING
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+Commit d306995
+Aishwarya011204
+Aishwarya011204
+authored
+13 hours ago
+Verified
+Add DataFrame creation and sorting example
+main
+1 parent 
+f220114
+ commit 
+d306995
+1 file changed
++20
+-0
+lines changed
+Search within code
+ 
+‎Experiment 3‎
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,20 @@
+import pandas as pd
+data = {
+    "JOB_ID": ["AD_PRES","AD_VP","AD_ASST","FI_MGR","FI_ACCOUNT","AC_MGR",
+               "AC_ACCOUNT","SA_MAN","SA_REP","PU_MAN","PU_CLERK","ST_MAN",
+               "ST_CLERK","SH_CLERK","IT_PROG","MK_MAN","MK_REP","HR_REP","PR_REP"],
+    "JOB_TITLE": [
+        "President","Administration Vice President","Administration Assistant",
+        "Finance Manager","Accountant","Accounting Manager","Public Accountant",
+        "Sales Manager","Sales Representative","Purchasing Manager",
+        "Purchasing Clerk","Stock Manager","Stock Clerk","Shipping Clerk",
+        "Programmer","Marketing Manager","Marketing Representative",
+        "Human Resources Representative","Public Relations Representative"
+    ]
+}
+df = pd.DataFrame(data)
+sorted_df = df.sort_values(by="JOB_TITLE", ascending=False)
+print(sorted_df)
+1 commit comments
+Comments
+1
+ (1)
+Aishwarya011204 commented 13 hours ago
+@Aishwarya011204
+Aishwarya011204
+13 hours ago
+Owner
+Author
+Image
+
+Please sign in to comment.
